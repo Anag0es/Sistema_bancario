@@ -1,0 +1,6 @@
+
+s
+java:S1192"QDefine a constant instead of duplicating this literal "Client not found" 3 times.(Üþ‰¼ùÿÿÿÿ8”øŒ‰Î1
+o	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(–ñä´ùÿÿÿÿ8¬øŒ‰Î1
+o
+java:S6204"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ª™¨¹8­øŒ‰Î1
