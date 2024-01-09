@@ -8,6 +8,7 @@ import lombok.Setter;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
+import java.util.ArrayList;
 import java.util.List;
 
 @Getter
@@ -37,10 +38,21 @@ public class ContaDTO {
         contaDTO.setSaldo(conta.getSaldo());
         contaDTO.setTipoConta(conta.getTipoConta().getDescricao());
         contaDTO.setDataAbertura(conta.getDataAbertura());
-        contaDTO.setTitular(ClientDTO.convert(conta.getTitular()));
+        contaDTO.setTitular(ClientDTO.convert(conta.getTitular().getTitular()));
         contaDTO.setTransacoes(TransacaoDTO.convert(conta.getTransacoes()));
         contaDTO.setNumeroDaConta(conta.getNumeroDaConta());
         contaDTO.setClienteId(conta.getId());
+
+        if (conta.getTitular() != null) {
+            contaDTO.setTitular(ClientDTO.convert(conta.getTitular().getTitular()));
+        }
+
+        if (conta.getTransacoes() != null) {
+            contaDTO.setTransacoes(TransacaoDTO.convert(conta.getTransacoes()));
+        } else {
+            contaDTO.setTransacoes(new ArrayList<>());
+        }
+
         return contaDTO;
     }
 

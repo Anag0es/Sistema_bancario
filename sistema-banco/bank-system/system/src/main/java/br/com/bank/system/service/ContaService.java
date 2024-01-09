@@ -7,6 +7,7 @@ import br.com.bank.system.model.Client;
 import br.com.bank.system.model.Conta;
 import br.com.bank.system.model.TipoConta;
 import br.com.bank.system.repository.ContaRepository;
+import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -45,7 +46,7 @@ public class ContaService {
 
     // lista contas por tipo
     public List<ContaDTO> findByTipoConta(String tipoConta){
-        List<Conta> contas = repository.findByTipoConta(TipoConta.valueOf(tipoConta));
+        List<Conta> contas = repository.findByByTipoConta(TipoConta.valueOf(tipoConta));
         return contas.stream().map(ContaDTO::convert)
                 .collect(Collectors.toList());
     }
@@ -65,6 +66,7 @@ public class ContaService {
     }
 
     // salva uma nova conta
+    @Transactional
     public ContaDTO save(ContaDTO contaDTO){
         if (contaDTO == null || contaDTO.getClienteId() == null) {
             throw new IllegalArgumentException("ContaDTO e/ou ClienteId não podem ser nulos");

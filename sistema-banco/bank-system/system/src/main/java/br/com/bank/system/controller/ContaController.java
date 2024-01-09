@@ -40,9 +40,9 @@ public class ContaController {
 
     // retorna contas com transacoes em um intervalo de datas
     @GetMapping("/contas/transacoes/{dataInicio}/{dataFim}")
-    public List<ContaDTO> findByTransacoes_Data(@PathVariable String dataInicio, String dataFim){
+    public List<ContaDTO> findByTransacoes_Data(@PathVariable String dataInicio, @PathVariable String dataFim) {
         return service.findByTransacoes_Data(dataInicio, dataFim);
-    }
+    }   
 
     // retorna contas por id do cliente
     @GetMapping("/contas/cliente/{clienteId}")

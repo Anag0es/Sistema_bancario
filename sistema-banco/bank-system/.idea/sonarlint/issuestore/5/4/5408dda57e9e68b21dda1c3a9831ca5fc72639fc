@@ -1,6 +1,4 @@
 
 _
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8…»‡ÜÎ1
-U
-java:S6856*"3Bind path variable "dataFim" to a method parameter.(ûßîºıÿÿÿÿ8†»‡ÜÎ1
-j	java:S100+"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ğ×ß®8Œ»‡ÜÎ1
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8¬ƒÉÜÎ1
+o	java:S100+"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¿ªÅ’øÿÿÿÿ8Ö¢ÁÿÎ1
