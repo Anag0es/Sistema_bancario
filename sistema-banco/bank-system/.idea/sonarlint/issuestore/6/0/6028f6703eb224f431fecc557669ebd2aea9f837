@@ -1,0 +1,18 @@
+
+b	java:S112]"FDefine and throw a dedicated exception instead of using a generic one.(°ƒ¯8ªÅ†ÜÎ1
+_
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8ØâèÜÎ1
+o	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(™ÏËÅøÿÿÿÿ8‰ìŒ¡Î1
+o
+java:S6204"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ª™¨¹8ÙşÃ€Ï1
+o
+java:S6204&"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ª™¨¹8ÛşÃ€Ï1
+o
+java:S62043"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ª™¨¹8İşÃ€Ï1
+o
+java:S6204:"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ª™¨¹8ŞşÃ€Ï1
+j	java:S100>"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Û¹İÎ8õÅ†ÜÎ1
+o
+java:S6204A"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ª™¨¹8àşÃ€Ï1
+f
+java:S1858l"I"getDataAbertura" returns a string, there's no need to call "toString()".(îëá‰8ìşÃ€Ï1
