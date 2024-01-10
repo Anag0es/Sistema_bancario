@@ -1,0 +1,22 @@
+
+_
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄÞ8Ý›Ê¨Ï1
+_
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄÞ8Þ›Ê¨Ï1
+o
+java:S6204"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ª™¨¹8»ð—¬Ï1
+o
+java:S6204'"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ª™¨¹8½ð—¬Ï1
+o
+java:S62040"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ª™¨¹8Àð—¬Ï1
+o
+java:S62048"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ª™¨¹8Äð—¬Ï1
+o
+java:S6204@"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ª™¨¹8Èð—¬Ï1
+]
+java:S1128";Remove this unused import 'br.com.bank.system.model.Conta'.(²ÅÒÒúÿÿÿÿ8Øð—¬Ï1
+s
+java:S1128
+"QRemove this unused import 'org.springframework.web.bind.annotation.PathVariable'.(¹ûñÅþÿÿÿÿ8Ùð—¬Ï1
+T
+java:S1128"2Remove this unused import 'java.util.Collections'.(¢³ïÓþÿÿÿÿ8Ùð—¬Ï1

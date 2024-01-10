@@ -17,7 +17,7 @@ public class ClientController {
     // retorna todos os clientes
     @GetMapping("/clients")
     public List<ClientDTO> listAll(){
-        return service.ListAll();
+        return service.listAll();
     }
 
     // retorna um cliente pelo seu id

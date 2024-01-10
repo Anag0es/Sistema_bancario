@@ -5,7 +5,6 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import jakarta.validation.constraints.NotNull;
 
 
 @Getter
@@ -21,6 +20,9 @@ public class ClientDTO {
 
     // convert
     public static ClientDTO convert(Client client) {
+        if (client == null) {
+            return null;
+        }
         ClientDTO clientDTO = new ClientDTO();
         clientDTO.setCpf(client.getCpf());
         clientDTO.setNome(client.getNome());

@@ -31,3 +31,11 @@ m
 =system/src/main/java/br/com/bank/system/dto/TransacaoDTO.java,3\d\3d0aa873096304676506e5e6bc754311bf502555
 w
 Gsystem/src/main/java/br/com/bank/system/controller/ContaController.java,5\4\5408dda57e9e68b21dda1c3a9831ca5fc72639fc
+{
+Ksystem/src/main/java/br/com/bank/system/repository/TransacaoRepository.java,6\2\62c2d9cc0caa43eac735dc29a15b10dcc6892a73
+S
+#.idea/sonarlint/issuestore/index.pb,9\f\9fe84ebb15faf917b7def6236dba604453cc61e0
+]
+-.idea/sonarlint/securityhotspotstore/index.pb,8\8\88a9255124c95bdc913197c120a8d560edc59c8e
+{
+Ksystem/src/main/java/br/com/bank/system/controller/TransacaoController.java,0\2\02fc2ffc26d5ae4ef96bb5d878f0aedf5100bf33

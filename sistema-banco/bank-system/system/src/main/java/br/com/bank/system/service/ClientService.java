@@ -4,6 +4,7 @@ import br.com.bank.system.dto.ClientDTO;
 import br.com.bank.system.model.Client;
 import br.com.bank.system.repository.ClientRepository;
 import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -13,10 +14,11 @@ import java.util.stream.Collectors;
 @RequiredArgsConstructor
 public class ClientService {
 
-    private final ClientRepository repository;
+    @Autowired
+    private ClientRepository repository;
 
     // lista todos os clientes
-    public List<ClientDTO> ListAll() {
+    public List<ClientDTO> listAll() {
         List<Client> clients = repository.findAll();
         return clients.stream().map(ClientDTO::convert)
                 .collect(Collectors.toList());

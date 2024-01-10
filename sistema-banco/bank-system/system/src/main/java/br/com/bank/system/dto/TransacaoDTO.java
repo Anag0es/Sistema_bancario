@@ -6,8 +6,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.Date;
 
 @Getter
 @Setter
@@ -18,22 +17,21 @@ public class TransacaoDTO {
     private double valor;
     private Long contaOrigemId;
     private Long contaDestinoId;
-    private String data;
+    private Date data;
+    private ContaDTO conta;
 
-    public static List<TransacaoDTO> convert(List<TransacaoDTO> transacoes) {
-        if (transacoes == null) {
-            return new ArrayList<>();
+    public static TransacaoDTO convert(Transacao transacao) {
+        if (transacao == null) {
+            return null;
         }
-        List<TransacaoDTO> transacoesDTO = new ArrayList<>();
-        for (TransacaoDTO transacao : transacoes) {
-            TransacaoDTO transacaoDTO = new TransacaoDTO();
-            transacaoDTO.setTipo(transacao.getTipo());
-            transacaoDTO.setValor(transacao.getValor());
-            transacaoDTO.setContaOrigemId(transacao.getContaOrigemId());
-            transacaoDTO.setContaDestinoId(transacao.getContaDestinoId());
-            transacoesDTO.add(transacaoDTO);
-        }
-        return transacoesDTO;
+
+        TransacaoDTO transacaoDTO = new TransacaoDTO();
+        transacaoDTO.setTipo(transacao.getTipo());
+        transacaoDTO.setValor(transacao.getValor());
+        transacaoDTO.setConta(ContaDTO.convert(transacao.getConta()));
+        transacaoDTO.setData(transacao.getData());
+        transacaoDTO.setContaOrigemId(transacao.getContaOrigemId());
+        transacaoDTO.setContaDestinoId(transacao.getContaDestinoId());
+        return transacaoDTO;
     }
-
 }
