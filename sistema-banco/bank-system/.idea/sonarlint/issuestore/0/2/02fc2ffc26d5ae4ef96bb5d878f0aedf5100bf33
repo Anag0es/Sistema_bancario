@@ -1,0 +1,15 @@
+
+_
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8€ãñ™Ï1
+O
+java:S6856"2Bind path variable "origem" to a method parameter.(¬Ó¡½8ãñ™Ï1
+U
+java:S6856 "3Bind path variable "destino" to a method parameter.(‡¸ä¥øÿÿÿÿ8ãñ™Ï1
+M
+java:S6856&"0Bind path variable "tipo" to a method parameter.(ŠÄ˜8ãñ™Ï1
+N
+java:S6856,"1Bind path variable "valor" to a method parameter.(Æüò¸8ãñ™Ï1
+P
+java:S68568".Bind path variable "id" to a method parameter.(éÅ§Àşÿÿÿÿ8ãñ™Ï1
+K
+java:S6856>".Bind path variable "id" to a method parameter.(şÔœ8‚ãñ™Ï1
