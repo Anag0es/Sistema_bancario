@@ -1,6 +1,7 @@
 package br.com.bank.system.dto;
 
 import br.com.bank.system.model.Conta;
+import br.com.bank.system.model.Transacao;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -38,17 +39,17 @@ public class ContaDTO {
         contaDTO.setSaldo(conta.getSaldo());
         contaDTO.setTipoConta(conta.getTipoConta().getDescricao());
         contaDTO.setDataAbertura(conta.getDataAbertura());
-        contaDTO.setTitular(ClientDTO.convert(conta.getTitular().getTitular()));
-        contaDTO.setTransacoes(TransacaoDTO.convert(conta.getTransacoes()));
+        contaDTO.setTitular(ClientDTO.convert(conta.getTitular()));
+        contaDTO.setTransacoes(conta.getTransacoes());
         contaDTO.setNumeroDaConta(conta.getNumeroDaConta());
         contaDTO.setClienteId(conta.getId());
 
         if (conta.getTitular() != null) {
-            contaDTO.setTitular(ClientDTO.convert(conta.getTitular().getTitular()));
+            contaDTO.setTitular(ClientDTO.convert(conta.getTitular()));
         }
 
         if (conta.getTransacoes() != null) {
-            contaDTO.setTransacoes(TransacaoDTO.convert(conta.getTransacoes()));
+            contaDTO.setTransacoes((conta.getTransacoes()));
         } else {
             contaDTO.setTransacoes(new ArrayList<>());
         }

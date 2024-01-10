@@ -18,6 +18,7 @@ public class ClientDTO {
     private String cpf;
     private String nome;
     private String apelido;
+    private Client titutar;
 
     // convert
     public static ClientDTO convert(Client client) {
