@@ -10,23 +10,16 @@ import org.springframework.data.neo4j.core.schema.Id;
 import org.springframework.data.neo4j.core.schema.Node;
 
 @JsonIdentityInfo(generator= ObjectIdGenerators.PropertyGenerator.class, property="id")
+@Getter
+@Setter
 @Node("Client")
 public class Client {
-
-    @Setter
-    @Getter
     @Id @GeneratedValue
     private Long id;
-    // getters e setters
-    @Setter
-    @Getter
     private String nome;
-    @Setter
-    @Getter
     private String cpf;
-    @Getter
-    @Setter
     private String apelido;
+
 
     public static Client converter(ClientDTO clientDTO) {
         Client client = new Client();

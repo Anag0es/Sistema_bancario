@@ -1,5 +1,6 @@
 package br.com.bank.system.model;
 
+import br.com.bank.system.dto.ClientDTO;
 import br.com.bank.system.dto.ContaDTO;
 import br.com.bank.system.dto.TransacaoDTO;
 import lombok.Getter;
@@ -56,19 +57,19 @@ public class Conta {
     }
 
     // convert
-    public static Conta convert(ContaDTO conta) {
-        Conta contaDTO = new Conta();
-        contaDTO.setId(conta.getId());
-        contaDTO.setSaldo(conta.getSaldo());
-        contaDTO.setTipoConta(TipoConta.valueOf(conta.getTipoConta()));
-        contaDTO.setDataAbertura(conta.getDataAbertura());
-        if (conta.getTitular() != null) {
-            contaDTO.setTitular(Client.converter(conta.getTitular()));
+    public static Conta convert(ContaDTO contaDTO) {
+        Conta conta = new Conta();
+        conta.setId(contaDTO.getId());
+        conta.setSaldo(contaDTO.getSaldo());
+        conta.setTipoConta(TipoConta.valueOf(contaDTO.getTipoConta()));
+        conta.setDataAbertura(contaDTO.getDataAbertura());
+        if (contaDTO.getTitular() != null) {
+            conta.setTitular(Client.converter(ClientDTO.convert(Client.converter(contaDTO.getTitular()))));
         }
-        contaDTO.setClienteId(conta.getClienteId());
-        contaDTO.setTransacoes(conta.getTransacoes());
-        contaDTO.setNumeroDaConta(conta.getNumeroDaConta());
-        return contaDTO;
+        conta.setClienteId(conta.getClienteId());
+        conta.setTransacoes(conta.getTransacoes());
+        conta.setNumeroDaConta(conta.getNumeroDaConta());
+        return conta;
     }
 
 

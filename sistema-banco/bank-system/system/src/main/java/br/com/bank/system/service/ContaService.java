@@ -109,7 +109,7 @@ public class ContaService {
             conta.setDataAbertura(dto.getDataAbertura());
         }
         if(dto.getTitular() != null){
-            conta.setTitular(Client.converter(dto.getTitular()));
+            conta.setTitular(Client.converter(ClientDTO.convert(Client.converter(dto.getTitular()))));
         }
         if(dto.getTransacoes() != null){
             conta.setTransacoes(dto.getTransacoes());
