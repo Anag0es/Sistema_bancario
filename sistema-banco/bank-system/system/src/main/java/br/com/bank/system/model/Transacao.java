@@ -32,6 +32,7 @@ public class Transacao {
             transacao.setValor(transacaodto.getValor());
             transacao.setTipo(transacaodto.getTipo());
             transacao.setData(transacaodto.getData());
+            transacao.setConta(Conta.convert(transacaodto.getConta()));
             transacao.setContaOrigemId(transacaodto.getContaOrigemId());
             transacao.setContaDestinoId(transacaodto.getContaDestinoId());
             transacoes.add(transacao);

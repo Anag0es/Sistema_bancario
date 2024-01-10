@@ -37,3 +37,5 @@ S
 #.idea/sonarlint/issuestore/index.pb,9\f\9fe84ebb15faf917b7def6236dba604453cc61e0
 ]
 -.idea/sonarlint/securityhotspotstore/index.pb,8\8\88a9255124c95bdc913197c120a8d560edc59c8e
+{
+Ksystem/src/main/java/br/com/bank/system/controller/TransacaoController.java,0\2\02fc2ffc26d5ae4ef96bb5d878f0aedf5100bf33

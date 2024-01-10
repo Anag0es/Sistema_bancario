@@ -1,0 +1,5 @@
+
+_
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄÞ8²ü¹…Ï1
+c
+java:S1858_"A"getData" returns a string, there's no need to call "toString()".( þü°ýÿÿÿÿ8Ãü¹…Ï1

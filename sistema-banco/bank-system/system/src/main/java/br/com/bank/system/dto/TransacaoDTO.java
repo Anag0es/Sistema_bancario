@@ -18,6 +18,7 @@ public class TransacaoDTO {
     private Long contaOrigemId;
     private Long contaDestinoId;
     private Date data;
+    private ContaDTO conta;
 
     public static TransacaoDTO convert(Transacao transacao) {
         if (transacao == null) {
@@ -27,6 +28,7 @@ public class TransacaoDTO {
         TransacaoDTO transacaoDTO = new TransacaoDTO();
         transacaoDTO.setTipo(transacao.getTipo());
         transacaoDTO.setValor(transacao.getValor());
+        transacaoDTO.setConta(ContaDTO.convert(transacao.getConta()));
         transacaoDTO.setData(transacao.getData());
         transacaoDTO.setContaOrigemId(transacao.getContaOrigemId());
         transacaoDTO.setContaDestinoId(transacao.getContaDestinoId());
