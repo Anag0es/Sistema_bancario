@@ -13,7 +13,7 @@ import java.util.List;
 public interface ContaRepository extends Neo4jRepository<Conta, Long> {
 
     // buscar conta por numero
-    Conta findByNumero(int numero);
+    Conta findByNumero(int numeroDaConta);
 
     // buscar pelo id do cliente recuperando suas contas
     List<Conta> findByClienteId(Long clienteId);

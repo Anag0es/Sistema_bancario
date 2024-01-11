@@ -1,18 +1,17 @@
 
-b	java:S112]"FDefine and throw a dedicated exception instead of using a generic one.(°ƒ¯8ªÅ†ÜÎ1
 _
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄÞ8ØâèÜÎ1
-o	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(™ÏËÅøÿÿÿÿ8‰ìŒ¡Î1
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄÞ8´á¼®Ï1
+o	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(™ÏËÅøÿÿÿÿ8¶á¼®Ï1
 o
-java:S6204"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ª™¨¹8ÙþÃ€Ï1
+java:S6204"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ª™¨¹8½†Ó®Ï1
 o
-java:S6204&"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ª™¨¹8ÛþÃ€Ï1
+java:S6204&"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ª™¨¹8¾†Ó®Ï1
 o
-java:S62043"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ª™¨¹8ÝþÃ€Ï1
+java:S62043"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ª™¨¹8À†Ó®Ï1
 o
-java:S6204:"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ª™¨¹8ÞþÃ€Ï1
-j	java:S100>"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Û¹ÝÎ8õÅ†ÜÎ1
+java:S6204:"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ª™¨¹8Â†Ó®Ï1
+j	java:S100>"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Û¹ÝÎ8Ã†Ó®Ï1
 o
-java:S6204A"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ª™¨¹8àþÃ€Ï1
+java:S6204A"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ª™¨¹8Ä†Ó®Ï1
 f
-java:S1858l"I"getDataAbertura" returns a string, there's no need to call "toString()".(îëá‰8ìþÃ€Ï1
+java:S1858k"I"getDataAbertura" returns a string, there's no need to call "toString()".(îëá‰8Ë†Ó®Ï1

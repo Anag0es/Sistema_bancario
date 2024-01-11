@@ -86,13 +86,12 @@ public class ContaService {
 
     // deleta uma conta pelo numeroDaConta
     public ContaDTO delete(int numeroDaConta) {
-        ContaDTO contaDTO = findByNumero(numeroDaConta);
-        if (contaDTO != null && contaDTO.getId() != null) {
-            repository.deleteById(contaDTO.getId());
-        } else {
-            throw new RuntimeException("Conta não encontrada com o número: " + numeroDaConta);
+        Conta conta = repository.findByNumero(numeroDaConta);
+        if (conta == null) {
+            throw new IllegalArgumentException("Conta não encontrada com o numero: " + numeroDaConta);
         }
-        return contaDTO;
+        repository.delete(conta);
+        return ContaDTO.convert(conta);
     }
 
 

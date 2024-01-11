@@ -34,7 +34,7 @@ public class Conta {
 
     private String dataAbertura;
 
-    @Relationship(type = "TEM_CONTA", direction = Relationship.Direction.INCOMING)
+    @Relationship(type = "TEM_CONTA", direction = Relationship.Direction.OUTGOING)
     private Client titular;
 
     @Relationship(type = "REALIZA_TRANSACAO", direction = Relationship.Direction.OUTGOING)
